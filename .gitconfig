@@ -1,0 +1,29 @@
+[user]
+    name = Richard W. Norton
+    email = rwtnorton@gmail.com
+[alias]
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    wwww = log --format='format:%ai: %h %ae: %s'
+    s = status
+    df = "!git-diff-so-fancy"
+    # ls-commit = diff-tree --no-commit-id --name-only -r
+    # undo = reset --soft HEAD^
+[core]
+    editor = vim
+    trustctime = false
+[push]
+    default = matching
+[color]
+    ui = true
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 52
+[color "diff"]
+    meta = yellow
+    frag = magenta bold
+    commit = yellow bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
